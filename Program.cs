@@ -28,12 +28,12 @@ namespace ArmoryBot
             CharData charData = new CharData();
             getTokens();
 
-           
 
-            
+
+
             DiscordClient client = new DiscordClient(discordToken, true, true);
             WoWClient wow = new WoWClient(publicKey: bpublicKey, privateKey: bprivateKey);
-            Console.WriteLine("private: " + bprivateKey +"\n" + "public: " + bpublicKey);
+            Console.WriteLine("private: " + bprivateKey + "\n" + "public: " + bpublicKey);
 
             client.MessageReceived += (sender, e) =>
             {
@@ -41,7 +41,7 @@ namespace ArmoryBot
                 {
                     if (e.MessageText.Contains("!find"))
                     {
-<<<<<<< HEAD
+
                         object charname = "";
                         object realmname = "";
                         try
@@ -62,22 +62,14 @@ namespace ArmoryBot
                         {
                             response = request.GetResponse();
                         }
-                        catch(WebException ex)
+                        catch (WebException ex)
                         {
                             e.Channel.SendMessage("Oops! Looks like the realm name or character is wrong! If not the api may have bugged out for a sec try again in a bit.");
 
                             Console.WriteLine("Error: " + ex);
                         }
-                        
-=======
-                        object charname = e.MessageText.Substring(6, e.MessageText.LastIndexOf("@") - 6);
-                        object realmname = e.MessageText.Substring(e.MessageText.LastIndexOf("@") + 1);
 
 
-                        WebRequest request = WebRequest.Create("https://us.api.battle.net/wow/character/" + realmname + "/" + charname + "?fields=items,guild&locale=en_US&apikey=be88k97qvzxjwq8q6frxmzccucwajudz");
-                        WebResponse response = request.GetResponse();
-
->>>>>>> 26097053f2ee7030b92d457214ba41ba2454b6e9
                         Stream dataStream = response.GetResponseStream();
                         StreamReader reader = new StreamReader(dataStream);
                         string responseFromServer = reader.ReadToEnd();
@@ -87,15 +79,15 @@ namespace ArmoryBot
                         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
                         string jc = JsonConvert.SerializeObject(json);
                         reader.Close();
-                        
+
                         className = "class";
-                        
+
                         string GetClassNames = data.@class;
                         getClass();
                         GetClass(GetClassNames.ToString());
                         dynamic o = JsonConvert.DeserializeObject(json);
                         string ItemLevel = (string)data["items"]["averageItemLevel"];
-                        
+
 
 
 
@@ -105,30 +97,23 @@ namespace ArmoryBot
                         charData.classType = data.@class;
                         charData.className = GetClass(GetClassNames);
                         charData.avgItemLevel = ItemLevel;
-<<<<<<< HEAD
+
                         string guildName = "No Guild";
 
                         try
                         {
-
                             guildName = (string)data["guild"]["name"];
                         }
                         catch
                         {
                             charData.guildName = "Not in a guild";
                         }
-                        
-                        
-                        
-                    
 
-                        e.Channel.SendMessage("```Name: " + charData.name + "\nGuild: " + "<" + charData.guildName + ">" + "\nLevel: " + charData.level + "\nAchievement Points: " + charData.achievementPoints + "\nClass: " + charData.className + "\nAverage Item Level: " + charData.avgItemLevel + "```");
-=======
-                        charData.guildName = (string)data["guild"]["name"];
+                        e.Channel.SendMessage("```Name: " + charData.name + "\nGuild: " + "<" + guildName + ">" + "\nLevel: " + charData.level + "\nAchievement Points: " + charData.achievementPoints + "\nClass: " + charData.className + "\nAverage Item Level: " + charData.avgItemLevel + "```");
 
-                        e.Channel.SendMessage("```Name: " + charData.name + "\nLevel: " + charData.level + "\nAchievement Points: " + charData.achievementPoints + "\nClass: " + charData.className + "\nAverage Item Level: " + charData.avgItemLevel + "\nGuild Name: " + "<" + charData.guildName + ">" +  "```");
->>>>>>> 26097053f2ee7030b92d457214ba41ba2454b6e9
-                        
+
+
+
                     }
                 }
 
@@ -157,7 +142,7 @@ namespace ArmoryBot
                 // Console.ForegroundColor = ConsoleColor.Cyan;
                 List<DiscordSharp.Objects.DiscordServer> servers = client.GetServersList();
                 Console.WriteLine("Connected to server as " + e.User.Username);
-                //client.UpdateCurrentGame("Working as intended!", true, "jorbo.github.io");
+                client.UpdateCurrentGame("Working as intended!", true, "jorbo.github.io");
             };
 
             Console.ReadKey();
@@ -180,9 +165,9 @@ namespace ArmoryBot
 
         public static string GetClass(string classType)
         {
-            
+
             CharData charData = new CharData();
-            
+
             if (classType.Equals("1"))
             {
                 className = "Warrior";
@@ -267,16 +252,16 @@ namespace ArmoryBot
             {
                 for (int i = 0; i < 6; i++)
                 {
-                    className = sr.ReadLine();                 
-                    
+                    className = sr.ReadLine();
+
                 }
             }
-            
+
         }
 
         public static void getTokens()
         {
-            using (StreamReader sr = new StreamReader(@"../../tokens.ini"))
+            using (StreamReader sr = new StreamReader(@"C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\tokens.ini"))
             {
                 for (int i = 0; i < 6; i++)
                 {

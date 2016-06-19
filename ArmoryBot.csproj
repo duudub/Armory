@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D7AC63C-D5F6-4AA1-B81B-BE791984172B}</ProjectGuid>
+    <ProjectGuid>{88165D8E-EB40-493D-9F06-79AE67DC79F8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WerewolfBot</RootNamespace>
-    <AssemblyName>WerewolfBot</AssemblyName>
+    <RootNamespace>ArmoryBot</RootNamespace>
+    <AssemblyName>ArmoryBot</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,26 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.DataVisualization" />
-    <Reference Include="System.Web.DataVisualization.Design" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.DynamicData.Design" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Entity.Design" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Extensions.Design" />
-    <Reference Include="System.Web.Mobile" />
-    <Reference Include="System.Web.RegularExpressions" />
-    <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,20 +55,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Desktop\DiscordSharp\DiscordSharp.Commands\DiscordSharp.Commands.csproj">
+    <ProjectReference Include="..\..\..\BattleDotNet\BattleDotNet\BattleDotNet.csproj">
+      <Project>{db398e18-3b4e-4b52-8095-686de019ac04}</Project>
+      <Name>BattleDotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DiscordSharp\DiscordSharp.Commands\DiscordSharp.Commands.csproj">
       <Project>{2e99d97f-3480-43e2-ac9d-7dae521cb610}</Project>
       <Name>DiscordSharp.Commands</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Desktop\DiscordSharp\DiscordSharp\DiscordSharp.csproj">
+    <ProjectReference Include="..\..\..\DiscordSharp\DiscordSharp\DiscordSharp.csproj">
       <Project>{a96ffe9e-3650-4976-872e-5bb336cc1589}</Project>
       <Name>DiscordSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BattleDotNet\BattleDotNet\BattleDotNet.csproj">
-      <Project>{db398e18-3b4e-4b52-8095-686de019ac04}</Project>
-      <Name>BattleDotNet</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

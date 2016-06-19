@@ -1,0 +1,21 @@
+C:\Users\jaayv\AppData\Local\Temporary Projects\ArmoryBot\bin\Debug\ArmoryBot.exe.config
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\ArmoryBot.exe.config
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\obj\Debug\ArmoryBot.csprojResolveAssemblyReference.cache
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\obj\Debug\ArmoryBot.csproj.ArmoryBot.exe.config
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\libsodium.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\opus.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\ArmoryBot.exe
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\ArmoryBot.pdb
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\BattleDotNet.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\DiscordSharp.Commands.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\DiscordSharp.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\WebSocket4Net.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\websocket-sharp.dll
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\BattleDotNet.pdb
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\DiscordSharp.Commands.pdb
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\DiscordSharp.pdb
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\bin\Debug\websocket-sharp.xml
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\obj\Debug\ArmoryBot.exe
+C:\Users\jaayv\OneDrive\Documents\ArmoryBot_2\ArmoryBot\ArmoryBot\obj\Debug\ArmoryBot.pdb
