@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmoryBot", "ArmoryBot\ArmoryBot.csproj", "{88165D8E-EB40-493D-9F06-79AE67DC79F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordSharp.Commands", "..\..\DiscordSharp\DiscordSharp.Commands\DiscordSharp.Commands.csproj", "{2E99D97F-3480-43E2-AC9D-7DAE521CB610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordSharp", "..\..\DiscordSharp\DiscordSharp\DiscordSharp.csproj", "{A96FFE9E-3650-4976-872E-5BB336CC1589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleDotNet", "..\..\BattleDotNet\BattleDotNet\BattleDotNet.csproj", "{DB398E18-3B4E-4B52-8095-686DE019AC04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88165D8E-EB40-493D-9F06-79AE67DC79F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88165D8E-EB40-493D-9F06-79AE67DC79F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88165D8E-EB40-493D-9F06-79AE67DC79F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88165D8E-EB40-493D-9F06-79AE67DC79F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E99D97F-3480-43E2-AC9D-7DAE521CB610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E99D97F-3480-43E2-AC9D-7DAE521CB610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E99D97F-3480-43E2-AC9D-7DAE521CB610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E99D97F-3480-43E2-AC9D-7DAE521CB610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96FFE9E-3650-4976-872E-5BB336CC1589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96FFE9E-3650-4976-872E-5BB336CC1589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96FFE9E-3650-4976-872E-5BB336CC1589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96FFE9E-3650-4976-872E-5BB336CC1589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB398E18-3B4E-4B52-8095-686DE019AC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB398E18-3B4E-4B52-8095-686DE019AC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB398E18-3B4E-4B52-8095-686DE019AC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB398E18-3B4E-4B52-8095-686DE019AC04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
