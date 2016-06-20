@@ -26,7 +26,16 @@ namespace ArmoryBot
         static void Main(string[] args)
         {
             CharData charData = new CharData();
-            getTokens();
+
+            if (File.Exists(@"../../../tokens.ini"))
+            {
+                getTokens();
+            }
+            else
+            {
+                Console.WriteLine("Make sure you have a tokens.ini file");
+            }
+            
 
 
 
