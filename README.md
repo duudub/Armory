@@ -5,6 +5,7 @@ Uses:
 https://github.com/Luigifan/DiscordSharp  
 and   
 https://github.com/ChadMoran/BattleDotNet
+Make sure to change tokens_blank.ini to just tokens.ini
 
 Commands:  
 !find {character name}@{realm name}
@@ -21,3 +22,4 @@ Average Item Level: 36
 ```
 Twitter:  
 www.twitter.com/jaayvazian
+
