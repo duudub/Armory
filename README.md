@@ -4,7 +4,7 @@ A World of Warcraft Armory Bot for Discord!
 Uses:  
 https://github.com/Luigifan/DiscordSharp  
 and   
-https://github.com/ChadMoran/BattleDotNet
+https://github.com/ChadMoran/BattleDotNet  
 Make sure to change tokens_blank.ini to just tokens.ini
 
 Commands:  
